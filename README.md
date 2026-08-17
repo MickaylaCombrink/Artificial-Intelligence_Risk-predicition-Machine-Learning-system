@@ -20,10 +20,7 @@ How it fits together:
 - The repository does not contain any private or PII-protected data. If you substitute real student data, ensure you follow applicable privacy and institutional policies.
 
 ## Configuration & secrets
-- GEMINI_API_KEY is required for natural-language explanations via Google Gemini. Add it to `.env` (do not commit):
-  - Copy `.env.example` → `.env`
-  - Edit `.env`:
-    - GEMINI_API_KEY=AIzaSy...your_real_key...
+- GEMINI_API_KEY is required for natural-language explanations via Google Gemini.
 - The code loads the API key with python-dotenv. If `GEMINI_API_KEY` is not set, the model prediction still runs, but explanations and chat will raise an error.
 
 ## Development notes & suggestions
@@ -44,13 +41,9 @@ How it fits together:
   - documenting dataset changes and expected metrics
 
 ## Known improvements / TODO
-- Add a LICENSE file (MIT / Apache / choose appropriate license).
 - Add CI to run linting and tests, and a simple check that training script runs (smoke test).
 - Add unit tests for predict_risk() and for the data cleaning pipeline.
 - Add an example of expected `models/` artifacts or release a trained model for demo users.
-
-## License
-Add a LICENSE file to this repository to state how the code may be used. (No license file included in the repo yet.)
 
 ## Contact
 Repository owner: MickaylaCombrink
